@@ -5,6 +5,7 @@ import stitcher from "../images/stitcher.png";
 import overcast from "../images/overcast.png";
 import pocket from "../images/pocketcasts.png";
 import beaker from "../images/beaker.svg";
+import heart from "../images/heart.svg";
 
 const WhereToListenSmall = () => {
   const data = useStaticQuery(graphql`
@@ -60,7 +61,7 @@ const WhereToListenSmall = () => {
         </li>
         <li className="w-8 ml-6 mr-6">
           <a href={data.site.siteMetadata.beaker}>
-            <img src={beaker} alt="spotify" />
+            <img src={heart} alt="spotify" />
           </a>
         </li>
         <li className="w-8 ml-6 mr-6">
