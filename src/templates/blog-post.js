@@ -85,7 +85,10 @@ export default ({ data }) => {
       </div>
       <div className={`${albumStyle.player} bg-white mt-6`}>
         {/* <div className="hidden xl:block pb-4 pt-4">{post.title}</div> */}
-        {post.enclosure.url !== null ? (
+
+        {post.enclosure == null ? (
+          <> </>
+        ) : (
           <audio
             className="w-full max-w-4xl xl:max-w-5xl"
             controls
@@ -95,8 +98,6 @@ export default ({ data }) => {
             Your browser does not support the
             <code>audio</code> element.
           </audio>
-        ) : (
-          <> </>
         )}
       </div>
     </Layout>
