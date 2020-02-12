@@ -85,6 +85,7 @@ export default ({ data }) => {
       </div>
       <div className={`${albumStyle.player} bg-white mt-6`}>
         {/* <div className="hidden xl:block pb-4 pt-4">{post.title}</div> */}
+
         {post.enclosure == null ? (
           <> </>
         ) : (
